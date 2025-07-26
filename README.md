@@ -1,6 +1,6 @@
 # Recipes App
 
-A full-featured CRUD application for managing recipes, built using **Node.js**, **Express.js**, and **MongoDB** with **Mongoose**. The app is structured using the **MVC (Model-View-Controller)** pattern.
+A full-featured backend CRUD application for managing recipes, built using Node.js, Express.js, and MongoDB with Mongoose. The app is structured using the MVC (Model-View-Controller) pattern.
 
 ## 🚀 Features
 
