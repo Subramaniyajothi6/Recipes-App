@@ -31,6 +31,11 @@ recipes-app/
 ├── routes/
 │   └── recipeRoutes.js
 │
+├── utils/
+│   ├── config.js
+│   ├── errorRouter.js
+│   └── logger.js
+│
 ├── .env
 ├── app.js           <-- Express app initialized here
 ├── server.js        <-- Entry point that starts the server
