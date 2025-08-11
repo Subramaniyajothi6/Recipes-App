@@ -3,11 +3,20 @@ const express = require('express');
 const logger = require('./utils/logger');
 const errorRoute = require('./utils/errorRoute')
 const recipesRouter = require('./routes/recipesRouters');
+const cors = require('cors');
 
 // const Todo = require('./models/todo');
 
 // create an instance or application of express
 const app = express();
+
+app.use(cors(
+    {
+        origin: 'http://localhost:5173',
+        methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+        credentials: true
+    }
+));
 
 // middleware to parse JSON bodies
 app.use(express.json());
