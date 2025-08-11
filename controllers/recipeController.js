@@ -1,6 +1,6 @@
 const Recipe = require('../models/recipe')
 
-const RecipeController = {
+const recipeController = {
 
     getAllRecipes: async (req, res) => {
         try {
@@ -59,4 +59,4 @@ const RecipeController = {
     }
 }
 
-module.exports = RecipeController;
+module.exports = recipeController;

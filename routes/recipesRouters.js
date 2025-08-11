@@ -1,7 +1,8 @@
 // import modules
 const express = require('express');
-const { getAllRecipes, getRecipeById, createRecipe, updateRecipe, deleteRecipe } = require('../controllers/RecipeController');
+// const { getAllRecipes, getRecipeById, createRecipe, updateRecipe, deleteRecipe } = require('../controllers/recipeController');
 
+const {getAllRecipes, getRecipeById, createRecipe, updateRecipe, deleteRecipe} = require('../controllers/recipeController')
 // import controllers
 
 
