@@ -13,9 +13,12 @@ const RecipeController = {
     getRecipeById: async (req, res) => {
         try {
             const { id } = req.params;
+<<<<<<< HEAD
             if (!mongoose.Types.ObjectId.isValid(id)) {
                 return res.status(400).json({ message: "Invalid recipe ID" });
             }
+=======
+>>>>>>> cc1c7735ac70eff721470d1f5f16bdaf610630f3
             const recipe = await Recipe.findById(id);
             res.status(200).json(recipe);
         }
@@ -41,9 +44,12 @@ const RecipeController = {
     updateRecipe: async (req, res) => {
         try {
             const { id } = req.params;
+<<<<<<< HEAD
             if (!mongoose.Types.ObjectId.isValid(id)) {
                 return res.status(400).json({ message: "Invalid recipe ID" });
             }
+=======
+>>>>>>> cc1c7735ac70eff721470d1f5f16bdaf610630f3
             const { name, ingredients, instructions } = req.body;
             await Recipe.findByIdAndUpdate(id, { name, ingredients, instructions });
             res.status(201).json({ message: 'recipe updated successfully' });
@@ -53,11 +59,19 @@ const RecipeController = {
         }
     },
     deleteRecipe: async (req, res) => {
+<<<<<<< HEAD
 
         try {
             const { id } = req.params;
             await Recipe.findByIdAndDelete(id);
             res.status(200).json({ message: 'recipe deleted successfully' })
+=======
+        
+        try{
+            const { id } = req.params;
+        await Recipe.findByIdAndDelete(id);
+        res.status(200).json({ message: 'recipe deleted successfully' })
+>>>>>>> cc1c7735ac70eff721470d1f5f16bdaf610630f3
         }
         catch (error) {
             res.status(500).json({ message: "Failed to delete recipe", error: error.message });
